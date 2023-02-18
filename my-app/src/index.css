@@ -11,3 +11,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.frame-2 {
+  color: #1d1818;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding-bottom: 6px;
+  padding-left: 30px;
+  font-family: Helvetica, Arial;
+  font-size: 1.313rem;
+  font-weight: 700;
+  line-height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.lori {
+  color: #dd5353;
+  margin-top: 2px;
+  margin-left: 3px;
+  font-size: 1.5rem;
+  margin-right: 10px;
+
+}
+
+.smilePhoto {
+  width: 325px;
+  height: 471px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  align-self: center;
+  margin-bottom: 9px;
+  
+}
+
+.meeting-my-old-time {
+  align-self: center;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 31px;
+  letter-spacing: 0.0017em;
+  color: #1D1818;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
