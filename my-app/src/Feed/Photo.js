@@ -1,7 +1,7 @@
-import smilePhoto from "./assets/smilePhoto.png";
-import feed1 from "./assets/feeding_1.png";
-import feed2 from "./assets/feeding_2.png";
-import feed3 from "./assets/feeding_3.png";
+import smilePhoto from "../assets/smilePhoto.png";
+import feed1 from "../assets/feeding_1.png";
+import feed2 from "../assets/feeding_2.png";
+import feed3 from "../assets/feeding_3.png";
 import './Photo.css';
 
 
