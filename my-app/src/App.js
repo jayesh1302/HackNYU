@@ -10,6 +10,7 @@ import { BrowserRouter as Router, BrowserRouter } from 'react-router-dom';
 // import HomeComponent from './Home-Component';
 import { Routes ,Route } from 'react-router-dom';
 import MapComponent from './Map-component';
+import Camera from './Camera/Camera-Component';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <DeviceFrameset device="iPhone X" color="gold">
               {/* <div>Hello world</div> */}
               <NavbarSmile />
+              {/* <Camera /> */}
               <Routes>
               <Route path="/" element={<Photo/>} />
               <Route path="/maps" element={<Maps/>} />
