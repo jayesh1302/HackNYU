@@ -1,0 +1,23 @@
+.photo-container {
+    height: 90%;
+    overflow: scroll;
+    padding-bottom: 60px;
+  }
+  
+  /* Hide scrollbar for webkit browsers */
+  .photo-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+  /* Hide scrollbar for Firefox */
+  .photo-container {
+    scrollbar-width: none;
+  }
+
+  .frame {
+    padding-top: 40px;
+    margin-top: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  }

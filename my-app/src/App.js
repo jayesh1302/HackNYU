@@ -7,7 +7,7 @@ import Photo from './Photo'
 import NavbarSmile from './Navbar-Container';
 import Maps from './Maps';
 import { BrowserRouter as Router, BrowserRouter } from 'react-router-dom';
-import HomeComponent from './Home-Component';
+// import HomeComponent from './Home-Component';
 import { Routes ,Route } from 'react-router-dom';
 import MapComponent from './Map-component';
 
