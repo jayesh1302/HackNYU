@@ -27,6 +27,7 @@ function App() {
               <Routes>
               <Route path="/" element={<Photo/>} />
               <Route path="/maps" element={<Maps/>} />
+              <Route path="/camera" element={<Camera/>} />
               </Routes>
               {/* <HomeComponent />
               <MapComponent /> */}
