@@ -31,19 +31,17 @@ const Camera = () => {
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <div style={{ position: 'relative' }}>
-        <video ref={videoRef} width="540" height="480" autoPlay />
-        <button onClick={handleStartClick}>Start Camera</button>
-        <button onClick={handleStopClick}>Stop Camera</button>
-        <button onClick={handleCaptureClick}>Take Picture</button>
-        {imageSrc && (
-          <div>
-            <img src={imageSrc} alt="Captured" width="640" height="780" />
-          </div>
-        )}
-        <canvas ref={canvasRef} style={{ display: 'none' }} width="640" height="480" />
-      </div>
+    <div>
+      <video ref={videoRef} width="640" height="480" autoPlay />
+      <button onClick={handleStartClick}>Start Camera</button>
+      <button onClick={handleStopClick}>Stop Camera</button>
+      <button onClick={handleCaptureClick}>Take Picture</button>
+      {imageSrc && (
+        <div>
+          <img src={imageSrc} alt="Captured" width="640" height="480" />
+        </div>
+      )}
+      <canvas ref={canvasRef} style={{ display: 'none' }} width="640" height="480" />
     </div>
   );
 };

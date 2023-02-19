@@ -5,7 +5,7 @@ function NavbarSmile() {
             <nav class="navbar bg-body-tertiary">
                 <div className="container-fluid d-flex flex-row">
                       <Link to="/maps"> 
-                    <iconify-icon icon="material-symbols:location-on-outline-sharp" width="40"></iconify-icon>
+                    <iconify-icon icon="material-symbols:location-on-outline-sharp" width="40" backgroundColor></iconify-icon>
                      </Link> 
                     <Link to="/">
                         <iconify-icon icon="material-symbols:home-outline-sharp" width="40"></iconify-icon>
