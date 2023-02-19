@@ -16,19 +16,19 @@ function MyComponent() {
     id: 'google-map-script',
     googleMapsApiKey: "AIzaSyBJg2CFzlEf46q8YxEtue-bEfYpqxNCVLc"
   })
-  // const [map, setMap] = React.useState(null)
+  const [map, setMap] = React.useState(null)
 
   const onLoad = React.useCallback(function callback(map) {
     // This is just an example of getting and using the map instance!!! don't just blindly copy!
-    console.log("called");
-    // const bounds = new window.google.maps.LatLngBounds(center);
-    // map.fitBounds(bounds);
 
-    // setMap(map)
+    const bounds = new window.google.maps.LatLngBounds(center);
+    map.fitBounds(bounds);
+
+    setMap(map)
   }, [])
 
   const onUnmount = React.useCallback(function callback(map) {
-    // setMap(null)
+    setMap(null)
   }, [])
 
   return isLoaded ? (
