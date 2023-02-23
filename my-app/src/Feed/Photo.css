@@ -2,12 +2,48 @@
     height: 90%;
     overflow: scroll;
     padding-bottom: 60px;
+    /* padding-top: 20px; */
+
   }
   
   /* Hide scrollbar for webkit browsers */
   .photo-container::-webkit-scrollbar {
     width: 0;
     height: 0;
+  }
+  .caption {
+    /* position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    position: relative;
+    align-items: left;
+    padding-left: 5px;
+    display: flex;
+    font-family: 'Gloria Hallelujah';
+
+  }
+  .caption p {
+    margin: 0;
+  }
+  
+  .collapse-btn {
+    align-self: flex-end;
+    background: transparent;
+    border: none;
+    color: #3897f0;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    /* position: relative;
+    bottom: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: #3897f0;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer; */
   }
   
   /* Hide scrollbar for Firefox */
@@ -16,11 +52,12 @@
   }
 
   .frame {
+    border-radius: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); /* shadow on all sides */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* shadow on all sides */
     margin-top: 10px;
   }
 
@@ -28,6 +65,10 @@
     display: flex;
     align-items: right;
 
+  }
+  .image {
+    width: 100%;
+    height: 400px;
   }
   .timer-text {
     text-align: right;
@@ -43,4 +84,45 @@
   .meeting-my-old-time {
     margin-right: 25px;
     margin-left: 15px;
+  }
+
+  .topcard {
+    font-family: 'Gloria Hallelujah', cursive;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    text-shadow: 10cap;
+    font-weight: bold;
+    float: left;
+    /* font-family: "Gloria Hallelujah"; */
+    
+  }
+  .circular-button {
+    margin-top: 65px;
+    display: inline-block;
+    width: 70px; /* Set width and height to create a circular shape */
+    height: 70px;
+    line-height: 50px; /* Set line height equal to height to center text vertically */
+    border-radius: 50%; /* Set border radius to 50% to create a circular shape */
+    background-color: #fff; /* Set background color */
+    color: #333; /* Set text color */
+    text-align: center; /* Center text horizontally */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.25rem; /* Set font size */
+    cursor: pointer; /* Change cursor on hover */
+    position: relative; /* Set position to relative for absolute positioning of the ring */
+  }
+  
+  .circular-button:before {
+    content: ''; /* Add content to the pseudo-element */
+    position: absolute; /* Set position to absolute for absolute positioning of the ring */
+    top: -6px; /* Move the ring up by 5px */
+    left: -6px; /* Move the ring left by 5px */
+    right: -6px; /* Move the ring right by 5px */
+    bottom: -6px; /* Move the ring down by 5px */
+    border-radius: 50%; /* Set border radius to 50% to create a circular shape */
+    border: 5px solid #333; /* Set border properties to create the ring */
+  }
+  
+  .circular-button:hover:before {
+    border-color: #ffffff; /* Change border color on hover */
   }
